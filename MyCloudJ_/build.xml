@@ -6,7 +6,8 @@
   <property name="build" location="bin" />
   <property name="dist"  location="dist" />
   <property name="pluginsCloudConnect"  location="./plugin/" />
- 
+  <property name="pluginsDir"  location="${basedir}/../../IJ/plugins/" />
+	
   <property name="user.name" value="Atin Mathur" />
 <target name="main" depends="compress" description="Main target">
 	<echo>
@@ -23,5 +24,6 @@
  		</manifest>
  	</jar>
     <copy file="MyCloudJ_.jar" toDir="${pluginsCloudConnect}" />
-  </target>
+    <copy file="MyCloudJ_.jar" toDir="${pluginsDir}" />
+ </target>
 </project>
